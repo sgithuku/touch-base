@@ -1,9 +1,34 @@
 <template name="private">
     <div class="ui fluid center aligned basic fitted segment">
-        <h1>Touch Base</h1>
-        Welcome {{currentUser.profile.name}}
+      {{> Template.dynamic template="datepicker"}}
+      {{> Template.dynamic template="datepicker"}}
+      {{> Template.dynamic template="datepicker"}}
+    </div>
 
-        {{> Template.dynamic template=datepicker}}
+    <div class="ui fluid center aligned basic fitted segment">
+        <form action="#" class="ui form">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search icon"></i>
+          </div>
+        </form>
+
+        <div class="ui card">
+        <div class="image">
+          <img src="/images/avatar2/large/kristy.png" alt ="insert image here">
+        </div>
+        <div class="content">
+          <a class="header">{{currentUser.profile.name}}</a>
+          <div class="meta">
+            <span class="date">You last spoke to {{currentUser.services.facebook.first_name}} [x] days ago.</span>
+          </div>
+        </div>
+        <div class="ui bottom attached button">
+          <i class="add icon"></i>
+          Add to list
+        </div>
+      </div>
+        <!-- Your seriously secure access token is {{currentUser.services.facebook.accessToken}} -->
 
     </div>
 </template>

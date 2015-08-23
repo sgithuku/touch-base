@@ -1,7 +1,12 @@
 <template name="mainLayout">
+    {{> Template.dynamic template=datepicker}}
     {{> Template.dynamic template=nav}}
-  <div class="content">
-    {{> Template.dynamic template=main}}
+  <div class="wrapper">
+    <div class="content pusher">
+      <div class="ui vertical masthead center aligned segment">
+        {{> Template.dynamic template=main}}
+      </div>
+    </div>
   </div>
 
   <footer>

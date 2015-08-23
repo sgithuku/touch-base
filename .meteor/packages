@@ -17,6 +17,7 @@ flemay:less-autoprefixer
 useraccounts:semantic-ui
 service-configuration
 accounts-ui
+maxkferg:facebook-collections
 
 # components
 sarasate:semantic-ui-datetimepicker
