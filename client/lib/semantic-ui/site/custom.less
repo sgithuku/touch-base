@@ -1,0 +1,45 @@
+// This is our custom less file
+
+@headerFont        : 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Oswald', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontFamily  : 'Open+Sans:400italic,400|Oswald:400,700';
+
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+/* The size of page text  */
+@fontSize : 16px;
+
+
+/* Default colors */
+@primaryColor        : #38618C; //blue
+@secondaryColor      : #FF5964; //orange/red
+
+@lightPrimaryColor   : #FFF; //white
+@lightSecondaryColor : #FFE74C; //yellow
+
+// body variables
+html,body{
+  height:100%;
+  color: @secondaryColor;
+}
+
+.inverted{
+  background-color: @primaryColor !important;
+  color: @lightPrimaryColor !important;
+}
+
+.wrapper{
+  height: 60vh;
+  width: 100%;
+  background-color:rgba(0,0,0,1) !important;
+}
+.content{
+  // background: url('/img/bg.jpg') no-repeat;
+  // background-size: cover;
+  min-height: 100%;
+  background-color: @lightPrimaryColor;
+}
+.ui.menu{
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+}

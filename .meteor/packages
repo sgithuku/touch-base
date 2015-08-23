@@ -7,4 +7,17 @@
 meteor-platform
 autopublish
 insecure
-react
+kadira:flow-router
+kadira:blaze-layout
+accounts-facebook
+useraccounts:flow-routing
+arillo:flow-router-helpers
+semantic:ui
+flemay:less-autoprefixer
+useraccounts:semantic-ui
+service-configuration
+accounts-ui
+maxkferg:facebook-collections
+
+# components
+sarasate:semantic-ui-datetimepicker

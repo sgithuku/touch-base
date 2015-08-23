@@ -1,0 +1,21 @@
+<!-- Navigation -->
+<template name="nav">
+
+  <div class="ui secondary pointing menu">
+    <div class="header item">Touch Base</div>
+    <a class="{{isActiveRoute regex='home'}} item" href="{{pathFor 'home'}}">Home</a>
+    <a class="{{isActiveRoute regex='private'}} item" href="{{pathFor 'private'}}">Dashboard</a>
+  <div class="right menu">
+    <a class="ui item button">
+      {{>atNavButton}}
+    </a>
+  </div>
+</div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    <a class="{{isActiveRoute regex='home'}} item" href="{{pathFor 'home'}}">Home</a>
+    <a class="{{isActiveRoute regex='private'}} item" href="{{pathFor 'private'}}">Private</a>
+    {{> atNavButton}}
+  </div>
+</template>
