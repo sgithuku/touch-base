@@ -1,34 +1,46 @@
 <template name="private">
     <div class="ui fluid center aligned basic fitted segment">
-      {{> Template.dynamic template="datepicker"}}
-      {{> Template.dynamic template="datepicker"}}
-      {{> Template.dynamic template="datepicker"}}
+      <h3 class="ui header">Step 1: What time are you free to chat?</h3>
+      <div class="ui six buttons">
+        <button class="ui toggle button">Morning</button>
+        <button class="ui toggle button">Brunch</button>
+        <button class="ui toggle button">Lunch</button>
+        <button class="ui toggle button">Tea</button>
+        <button class="ui toggle button">Evening</button>
+        <button class="ui toggle button">Late night</button>
+      </div>
     </div>
 
-    <div class="ui fluid center aligned basic fitted segment">
-        <form action="#" class="ui form">
-          <div class="ui icon input">
-            <input type="text" placeholder="Search...">
-            <i class="search icon"></i>
-          </div>
-        </form>
+    <div class="ui segment">
+      <h3 class="ui header">
+        Step 2: Who haven't you caught up with in a while?
+      </h3>
 
+      <div class="ui large fluid input">
+        <input type="text" placeholder="">
+        <button class="ui button">Search</button>
+      </div>
+
+      <div class="ui three cards spacer">
         <div class="ui card">
-        <div class="image">
-          <img src="/images/avatar2/large/kristy.png" alt ="insert image here">
-        </div>
-        <div class="content">
-          <a class="header">{{currentUser.profile.name}}</a>
-          <div class="meta">
-            <span class="date">You last spoke to {{currentUser.services.facebook.first_name}} [x] days ago.</span>
+          <div class="image">
+            <img src="/img/card.png" alt ="insert image here">
+          </div>
+
+          <div class="content">
+            <a class="header">{{currentUser.profile.name}}</a>
+            <div class="meta">
+              <span class="date">You last spoke to {{currentUser.services.facebook.first_name}} [x] days ago.</span>
+            </div>
+          </div>
+
+          <div class="ui bottom attached button">
+            <i class="add icon"></i>
+            Add to list
           </div>
         </div>
-        <div class="ui bottom attached button">
-          <i class="add icon"></i>
-          Add to list
-        </div>
+
       </div>
-        <!-- Your seriously secure access token is {{currentUser.services.facebook.accessToken}} -->
 
     </div>
 </template>

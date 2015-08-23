@@ -19,5 +19,4 @@ service-configuration
 accounts-ui
 maxkferg:facebook-collections
 
-# components
-sarasate:semantic-ui-datetimepicker
+matteodem:easy-search
