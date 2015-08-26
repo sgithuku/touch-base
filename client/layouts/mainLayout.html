@@ -1,12 +1,13 @@
 <template name="mainLayout">
-
+  <div class="wrapper">
     {{> Template.dynamic template=nav}}
 
-  <div class="ui vertical masthead center aligned spacer">
-    {{> Template.dynamic template=main}}
+    <div class="ui vertical masthead center aligned segment frontpage">
+      {{> Template.dynamic template=main}}
+    </div>
   </div>
 
-  <footer class= "ui vertical container spacer">
+  <footer class= "ui vertical container">
     {{> Template.dynamic template=footer}}
   </footer>
 

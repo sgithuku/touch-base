@@ -11,39 +11,71 @@
 
 
 /* Default colors */
-@primaryColor        : #38618C;
-@secondaryColor      : #FF5964;
+@primaryColor:   #5D4037;
+@secondaryColor:       #795548;
 
-@lightPrimaryColor   : #FFF;
-@lightSecondaryColor : #FFE74C;
+@lightPrimaryColor:  #D7CCC8;
+@lightSecondaryColor:   #FFFFFF;
+
+@accentColor:        #FF5722;
+
+
+@primaryTextColor:   #212121;
+@secondaryTextColor: #727272;
+@dividerColor:       #B6B6B6;
+
+/* header colors */
+h2{
+  color: @primaryColor !important;
+}
+
 
 // body variables
 html,body{
-  height:100%;
-  color: @secondaryColor;
+  color: @primaryColor;
 }
 
-.inverted{
-  background-color: @primaryColor !important;
-  color: @lightPrimaryColor !important;
+h3{
+  color: @secondaryColor !important;
 }
-
+h3.ui.inverted.header{
+  color: @lightSecondaryColor !important;
+}
+/* my customizations */
 .wrapper{
-  height: 60vh;
+  min-height: 80vh;
   width: 100%;
-  background-color:rgba(0,0,0,1) !important;
+  background-color: rgba(255,255,255,0.7);
+  z-index: 1000;
 }
-.content{
-  // background: url('/img/bg.jpg') no-repeat;
-  // background-size: cover;
+.frontpage{
+  height: 100%;
   min-height: 100%;
-  background-color: @lightPrimaryColor;
+  border-bottom: 0 !important;
+  background: url('/img/bg2.jpg') no-repeat !important;
+  background-size: cover !important;
 }
 .ui.menu{
   margin-bottom: 0 !important;
   border-radius: 0 !important;
+  color: @primaryColor !important;
 }
 
 .spacer{
-  padding: 4em 0;
+  padding: 30vh 0;
+}
+
+.spacer-small{
+  padding: 10vh 0;
+}
+
+
+.ui .inverted .header{
+  color: @lightPrimaryColor !important;
+}
+
+/* steps */
+.step1{
+  background-color: @primaryColor !important;
+  width: 100%;
 }
