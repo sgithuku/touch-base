@@ -5,7 +5,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 kadira:flow-router
 kadira:blaze-layout
@@ -18,5 +17,6 @@ useraccounts:semantic-ui
 service-configuration
 accounts-ui
 maxkferg:facebook-collections
-
+dburles:collection-helpers
 matteodem:easy-search
+cedla:mdi

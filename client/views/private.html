@@ -1,20 +1,22 @@
 <template name="private">
-
+    <!-- /* Step 1 */ -->
     <div class="step1">
-      <div class="ui container spacer-small">
-        <h3 class="ui inverted header">Step 1: What time are you free to chat?</h3>
-        <div class="ui six buttons">
-          <button class="ui toggle button">Morning</button>
-          <button class="ui toggle button">Brunch</button>
-          <button class="ui toggle button">Lunch</button>
-          <button class="ui toggle button">Tea</button>
-          <button class="ui toggle button">Evening</button>
-          <button class="ui toggle button">Late night</button>
+      <div class="ui grid container">
+        <div class="ui spacer-small">
+          <h3 class="ui inverted header">Step 1: What time are you free to chat?</h3>
+          <div class="ui four buttons">
+            <button class="ui inverted white button"><i class="mdi mdi-weather-sunset-up"></i>Morning</button>
+            <button class="ui inverted white button"><i class="mdi mdi-weather-sunny"></i>Lunch</button>
+            <button class="ui inverted white button"><i class="mdi mdi-weather-sunset-down"></i>Evening</button>
+            <button class="ui inverted white button"><i class="mdi mdi-weather-night"></i>Late night</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="ui container">
+    <!-- /* Step 2 */ -->
+    <div class="ui grid container">
+    <!-- /* Search field */ -->
       <div class="spacer-small">
         <h3 class="ui header">
           Step 2: Who haven't you caught up with in a while?

@@ -1,14 +1,12 @@
 <!-- Navigation -->
 <template name="nav">
 
-  <div class="ui container">
-    <div class="ui secondary pointing menu">
-      <div class="header item">Touch Base</div>
-        <a class="{{isActiveRoute regex='home'}} item" href="{{pathFor 'home'}}">Home</a>
-        <a class="{{isActiveRoute regex='private'}} item" href="{{pathFor 'private'}}">Dashboard</a>
-      <div class="right menu">
-          {{>atNavButton}}
-      </div>
+  <div class="ui secondary pointing menu">
+    <div class="header item">Touch Base</div>
+      <a class="{{isActiveRoute regex='home'}} item" href="{{pathFor 'home'}}">Home</a>
+      <a class="{{isActiveRoute regex='private'}} item" href="{{pathFor 'private'}}">Dashboard</a>
+    <div class="right menu">
+        {{>atNavButton}}
     </div>
   </div>
 
