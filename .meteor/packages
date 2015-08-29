@@ -6,17 +6,28 @@
 
 meteor-platform
 insecure
-kadira:flow-router
-kadira:blaze-layout
-accounts-facebook
-useraccounts:flow-routing
-arillo:flow-router-helpers
-semantic:ui
 flemay:less-autoprefixer
+
+# kadira:flow-router
+# kadira:blaze-layout
+
+# useraccounts:flow-routing
+# arillo:flow-router-helpers
+
+
 useraccounts:semantic-ui
-service-configuration
+semantic:ui
+
 accounts-ui
-maxkferg:facebook-collections
+accounts-facebook
+service-configuration
+# maxkferg:facebook-collections
+
+cedla:mdi
+
+iron:router
+useraccounts:iron-routing
+zimme:active-route
+
 dburles:collection-helpers
 matteodem:easy-search
-cedla:mdi
