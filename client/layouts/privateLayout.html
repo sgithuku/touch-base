@@ -1,8 +1,10 @@
 <template name="privateLayout">
-  {{> nav}}
+    <div class="wrapper">
+    {{> nav}}
 
-    <div class="ui vertical masthead center aligned">
+    <div class="ui">
       {{> yield }}
+    </div>
     </div>
 
     <footer class= "ui vertical container">
