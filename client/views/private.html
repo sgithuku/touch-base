@@ -1,21 +1,8 @@
 <template name="private">
-    <!-- /* Step 1 */ -->
-    <div class="step1">
-      <div class="ui grid container">
-        <div class="ui spacer-small">
-          <h3 class="ui inverted header">Step 1: What time are you free to chat?</h3>
-          <div class="ui four buttons">
-            <button class="ui inverted white button"><i class="mdi mdi-weather-sunset-up"></i>Morning</button>
-            <button class="ui inverted white button"><i class="mdi mdi-weather-sunny"></i>Lunch</button>
-            <button class="ui inverted white button"><i class="mdi mdi-weather-sunset-down"></i>Evening</button>
-            <button class="ui inverted white button"><i class="mdi mdi-weather-night"></i>Late night</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  {{> timeSelector}}
 
     <!-- /* Step 2 */ -->
-    <div class="ui grid container">
+    <div class="ui grid container center aligned">
     <!-- /* Search field */ -->
       <div class="spacer-small">
         <h3 class="ui header">
@@ -23,29 +10,35 @@
         </h3>
 
         <div class="ui fluid input">
-          <input type="text" placeholder="William Wordsworth">
+          {{> esInput index="everyone" placeholder="Search..." }}
           <button class="ui button">Search</button>
         </div>
       </div>
 
-      <div class="ui three cards">
-        <div class="ui card">
-          <div class="image">
-            <img src="/img/card.png" alt ="insert image here">
-          </div>
+      <div class="row">
+        {{> listitem}}
 
-          <div class="content">
-            <a class="header">{{currentUser.profile.name}}</a>
-            <div class="meta">
-              <span class="date">You last spoke to {{currentUser.services.facebook.first_name}} [x] days ago.</span>
+        <div class="ui middle aligned divided list">
+          <h3>Search results</h3>
+          {{#esEach index="everyone"}}
+            <div class="item">
+              <div class="right floated content">
+                <div class="ui button" id="toggle">Add</div>
+              </div>
+
+              <img class="ui avatar image" src="/img/card.png">
+
+              <div class="content">
+                  <a href="#" class="header">{{name}}</a>
+                  <div class="description">You've been friends since [x]</div>
+              </div>
+
             </div>
-          </div>
-
-          <div class="ui bottom attached button">
-            <i class="add icon"></i>
-            Add to list
-          </div>
+          {{/esEach}}
         </div>
+        {{#if listitem.checked}}
+          It worked?!
+        {{/if}}
 
       </div>
 

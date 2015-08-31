@@ -1,11 +1,13 @@
 <template name="privateLayout">
-  {{> Template.dynamic template=nav}}
+    <div class="wrapper">
+    {{> nav}}
 
-    <div class="ui vertical masthead center aligned">
-      {{> Template.dynamic template=main}}
+    <div class="ui">
+      {{> yield }}
+    </div>
     </div>
 
     <footer class= "ui vertical container">
-      {{> Template.dynamic template=footer}}
+      {{> footer}}
     </footer>
 </template>

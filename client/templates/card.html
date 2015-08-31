@@ -1,13 +1,19 @@
 <template name = "card">
   <div class="ui card">
-  <a class="image" href="#">
-    <img src="/images/avatar/large/steve.jpg">
-  </a>
-  <div class="content">
-    <a class="header" href="#">Steve Jobes</a>
-    <div class="meta">
-      <a>Last Seen 2 days ago</a>
+    <div class="image">
+      <img src="/img/card.png" alt ="insert image here">
     </div>
-  </div>
+
+    <div class="content">
+      <a class="header">{{currentUser.profile.name}}</a>
+      <div class="meta">
+        <span class="date">You last spoke to {{currentUser.services.facebook.first_name}} [x] days ago.</span>
+      </div>
+    </div>
+
+    <div class="ui bottom attached button">
+      <i class="add icon"></i>
+      Add to list
+    </div>
   </div>
 </template>

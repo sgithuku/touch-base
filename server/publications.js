@@ -1,5 +1,4 @@
-allUsers = new Meteor.Collection('allUsers');
-
-Meteor.publish('allUsers', function(){
-    return Meteor.users.find({_id:this.userId},);
+// Connect to the user
+Meteor.publish('everyone', function(){
+    return Everyone.find();
 });
