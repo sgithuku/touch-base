@@ -1,7 +1,7 @@
 // Add the client subs
 Tracker.autorun(function () {
   Meteor.subscribe("everyone", function(){
-    console.log(everyone, everyone.find(), everyone.find().fetch());
+    console.log(Everyone.find().fetch());
   });
 });
 
@@ -13,3 +13,12 @@ Template.listitem.helpers({
     return Everyone.find({},{sort:{name:1}});
   }
 });
+
+Template.listitem.events({
+    "click #toggle": function () {
+      // Set the checked property to the opposite of its current value
+      Everyone.update(this._id, {
+        $set: {checked: ! this.checked}
+      });
+    }
+  });
